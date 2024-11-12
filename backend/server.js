@@ -77,6 +77,11 @@ app.post("/contact", async (req, res) => {
 });
 
 connect(); // Call connect function to establish database connection
+app.get("/", async (req, res) => {
+  console.log("Server Running Successfully");
+  res.send("Server is running successfully!");
+});
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
