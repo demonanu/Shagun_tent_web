@@ -18,7 +18,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:6003/contact", {
+    const response = await fetch("https://shagun-tent-web.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
